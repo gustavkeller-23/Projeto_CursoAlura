@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-secundário: #C0C0C0;
+    --azul-botao: #167DF7;
+    --cor-de-fundo: #00030C;
+
+    --font-principal: 'Inter', sans-serif;
+}
+
+.content{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    box-sizing: border-box;
+    font-family: var(--font-principal);
+    display: flex;
+    flex-direction: column;
+}
+
+.content__assinatura{
+    background-image: url("Images/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.content__assinatura__texto{
+    flex-direction: column;
+    margin: 12em 10em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.content__assinatura__texto__titulo{
+    font-size: 1.75rem;
+    font-weight: 700;
+    padding: 0 20px;
+}
+.content__assinatura__texto__combo{
+    margin: 1em 0 2em 0;
+}
+.content__assinatura__texto__button_1,
+.content__assinatura__texto__button_2{
+    color: var(--branco-principal);
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    border-radius: 8px;
+    border: solid 1px var(--branco-principal);
+    margin-bottom: 1em;
+}
+.content__assinatura__texto__button_1{
+    background-color: var(--azul-botao);
+    border: var(--azul-botao);
+}
+.content__assinatura__texto__info{
+    font-size: 0.75rem;
+    color: var(--cinza-secundário);
+    font-weight: 400;
+}
+
+
+
+
+.content__responsividade__text__title,
+.content__download__text__title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.content__responsividade__text,
+.content__dispositivos__text,
+.content__download__text,
+.content__combo__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+.content__responsividade{
+    display: flex;
+    justify-content: center;
+    padding: 15% 0 15% 0;
+    margin: 0 10em;
+    gap: 10em;
+}
+.content__responsividade__text__main{
+    color: var(--cinza-secundário);
+    font-size: 16px;
+    font-weight: 400;
+    gap: 16px;
+}
+
+.content__combo{
+    display: flex;
+    justify-content: center;
+    padding: 15% 0 15% 0;
+    margin: 0 10em;
+    gap: 10em;
+}
+.content__combo__text__main{
+    color: var(--cinza-secundário);
+    font-size: 1rem;
+    font-weight: 400;
+    gap: 16px;
+}
+.content__combo__text__button{
+    padding: 1em;
+    border-radius: 8px;
+    color: var(--branco-principal);
+    text-decoration: none;
+    background-color: var(--azul-botao);
+}
+
+.content__download{
+    display: flex;
+    justify-content: center;
+    padding: 15% 0 15% 0;
+    margin: 0 10em;
+    gap: 10em;
+}
+.content__download__text{
+    gap: 2em;
+}
+.content__download__text__main{
+    color: var(--cinza-secundário);
+    font-size: 1rem;
+    font-weight: 400;
+    gap: 16px;
+}
+
+.content__dispositivos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15% 0 8% 0;
+    gap: 2em;
+}
+.content__dispositivos__title{
+    font-size: 3rem;
+}
+.content__dispositivos__imagens{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+.content__dispositivos__imagens__aparelhos{
+    margin: 1em;
+}
+.content__dispositivos__imagens__text{
+    font-family: var(--font-principal);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+.dados-finais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 17% 6% 17%;
+    gap: 2em;
+}
+.dados-finais__links{
+    display: flex;
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    font-weight: 400;
+    gap: 16px;
+}
+.logo__alura__mais{
+    width: 102px;
+}
+.dados-finais__links__link{
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+.dados-finais__links__link:hover{
+    text-decoration: none;
+    color: var(--azul-botao);
+}
+.dados-finais__links__link:active{
+    text-decoration: none;
+    color: var(--cinza-secundário);
+}
+.dados-finais__text{
+    color: var(--cinza-secundário);
+    font-size: 0.875rem;
+    font-weight: 400;
+
+}
